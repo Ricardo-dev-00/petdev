@@ -1,3 +1,9 @@
+import { Hero } from "./_components/Hero";
+
 export default function Home() {
-  return <h1>Welcome to PagePet!</h1>;
+  return (
+    <main className="">
+      <Hero />
+    </main>
+  );
 }
