@@ -1,8 +1,15 @@
 import type { NextConfig } from "next";
 
+const isGitHubPagesBuild = process.env.GITHUB_PAGES === "true";
+const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "";
+
 const nextConfig: NextConfig = {
-  /* config options here */
   reactCompiler: true,
+  output: isGitHubPagesBuild ? "export" : undefined,
+  images: isGitHubPagesBuild ? { unoptimized: true } : undefined,
+  trailingSlash: isGitHubPagesBuild,
+  basePath: isGitHubPagesBuild && repoName ? `/${repoName}` : "",
+  assetPrefix: isGitHubPagesBuild && repoName ? `/${repoName}/` : undefined,
 };
 
 export default nextConfig;
