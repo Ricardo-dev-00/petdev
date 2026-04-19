@@ -124,26 +124,25 @@ export function Services() {
                   </div>
                 ))}
               </div>
+              <button
+                type="button"
+                aria-label="Voltar serviços"
+                onClick={() => emblaApi?.scrollPrev()}
+                disabled={!canScrollPrev}
+                className="absolute left-4 top-1/2 -translate-x-1/2 -translate-y-1/2 h-10 w-10 inline-flex items-center justify-center rounded-full border border-red-500 bg-white text-red-500 shadow-sm transition disabled:opacity-40 disabled:cursor-not-allowed hover:bg-red-50"
+              >
+                <ChevronLeft size={20} />
+              </button>
+              <button
+                type="button"
+                aria-label="Avançar serviços"
+                onClick={() => emblaApi?.scrollNext()}
+                disabled={!canScrollNext}
+                className="absolute right-4 top-1/2 translate-x-1/2 -translate-y-1/2 h-10 w-10 inline-flex items-center justify-center rounded-full border border-red-500 bg-white text-red-500 shadow-sm transition disabled:opacity-40 disabled:cursor-not-allowed hover:bg-red-50"
+              >
+                <ChevronRight size={20} />
+              </button>
             </div>
-
-            <button
-              type="button"
-              aria-label="Voltar serviços"
-              onClick={() => emblaApi?.scrollPrev()}
-              disabled={!canScrollPrev}
-              className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 h-10 w-10 inline-flex items-center justify-center rounded-full border border-red-500 bg-white text-red-500 shadow-sm transition disabled:opacity-40 disabled:cursor-not-allowed hover:bg-red-50"
-            >
-              <ChevronLeft size={20} />
-            </button>
-            <button
-              type="button"
-              aria-label="Avançar serviços"
-              onClick={() => emblaApi?.scrollNext()}
-              disabled={!canScrollNext}
-              className="absolute right-0 top-1/2 translate-x-1/2 -translate-y-1/2 h-10 w-10 inline-flex items-center justify-center rounded-full border border-red-500 bg-white text-red-500 shadow-sm transition disabled:opacity-40 disabled:cursor-not-allowed hover:bg-red-50"
-            >
-              <ChevronRight size={20} />
-            </button>
           </div>
         </div>
       </div>
