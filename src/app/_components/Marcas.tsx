@@ -16,6 +16,8 @@ const brands: Brand[] = [
 ];
 
 export function Marcas() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
   return (
     <section className="bg-red-500 py-16" aria-labelledby="marcas-title">
       <h2
@@ -32,7 +34,7 @@ export function Marcas() {
             className="bg-white flex items-center justify-center rounded-2xl"
           >
             <Image
-              src={brand.src}
+              src={`${basePath}${brand.src}`}
               alt={`Logo ${brand.name}`}
               width={800}
               height={400}
