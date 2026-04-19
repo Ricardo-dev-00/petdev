@@ -116,12 +116,9 @@ export function Services() {
                           Duração: {service.duration}
                         </p>
 
-                        <a
-                          href="#"
-                          className="text-white font-bold hover:underline select-none"
-                        >
+                        <span className="text-white font-bold select-none">
                           {service.linkText}
-                        </a>
+                        </span>
                       </div>
                     </div>
                   </div>
