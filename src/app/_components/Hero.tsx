@@ -19,10 +19,13 @@ export function Hero() {
       </div>
       <div className="container mx-auto py-16 md:pb-0 px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 relative">
         <div className="space-y-6">
-          <h1 className="text-white text-3xl md:text-4xl lg:text-5xl leading-10 font-bold mb-4">
+          <h1
+            className="text-white text-3xl md:text-4xl lg:text-5xl leading-10 font-bold mb-4"
+            data-aos="fade-down"
+          >
             Seu pet merece cuidado, carinho e atenção especial.
           </h1>
-          <p className="text-gray-200 text-lg">
+          <p className="text-gray-200 text-lg" data-aos="fade-right">
             Oferecemos os melhores serviços para garantir o bem-estar e a
             felicidade do seu pet.
           </p>

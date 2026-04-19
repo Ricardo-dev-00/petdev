@@ -59,23 +59,30 @@ export function About() {
           </div>
         </div>
 
-        <div className="space-y-6 mt-16">
+        <div
+          className="space-y-6 flex flex-col justify-center"
+          data-aos="fade-left"
+        >
           <h2 id="about-title" className="text-4xl font-bold uppercase mb-4">
             Sobre
           </h2>
           <p className="text-gray-500 mb-4">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
-            dolorum vitae amet, beatae non nulla iusto! Qui autem dolore nihil?
-            Itaque temporibus quibusdam, ab tenetur sit aspernatur accusamus
-            dolorem vero?
+            Na PetDev, unimos carinho, experiência e atenção aos detalhes para
+            oferecer o melhor cuidado ao seu pet. Nossa equipe é especializada
+            em bem-estar animal e trabalha com atendimento humanizado, ambiente
+            seguro e serviços pensados para cada fase da vida do seu
+            companheiro.
           </p>
-          <ul className="space-y-2">
+          <ul className="space-y-4">
             {infoItems.map((item) => (
               <AboutInfoItem key={item} text={item} />
             ))}
           </ul>
 
-          <div className="flex gap-4 items-center flex-wrap">
+          <div
+            className="flex gap-4 items-center flex-wrap mt-10"
+            data-aos="fade-up"
+          >
             <a
               href={whatsappLink}
               target="_blank"
