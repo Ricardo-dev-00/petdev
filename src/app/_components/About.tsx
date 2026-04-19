@@ -60,7 +60,7 @@ export function About() {
         </div>
 
         <div className="space-y-6 mt-16">
-          <h2 id="about-title" className="text-3xl font-bold uppercase mb-4">
+          <h2 id="about-title" className="text-4xl font-bold uppercase mb-4">
             Sobre
           </h2>
           <p className="text-gray-500 mb-4">
