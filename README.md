@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PetDev
 
-## Getting Started
+Landing page moderna para pet shop, desenvolvida com foco em performance, experiência do usuário e boas práticas de front-end com React e Next.js.
 
-First, run the development server:
+## Demonstração
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Deploy no GitHub Pages: https://ricardo-dev-00.github.io/petdev/
+
+## Preview da Aplicação
+
+![Preview do projeto PetDev](https://github.com/Ricardo-dev-00/petdev/blob/master/public/petdev.png?raw=true)
+
+## Sobre o Projeto
+
+O PetDev foi criado para simular uma página institucional de um pet shop com comunicação clara, visual forte e navegação objetiva. A proposta é apresentar serviços, diferenciais, marcas parceiras, feedbacks e canais de contato em uma experiência fluida, responsiva e agradável em desktop e mobile.
+
+Além do resultado visual, o projeto demonstra domínio de estrutura de componentes, organização de código e deploy automatizado com GitHub Actions.
+
+## Tecnologias Aplicadas e Como Foram Utilizadas
+
+- Next.js (App Router)
+  - Estrutura principal da aplicação com roteamento moderno e renderização otimizada.
+  - Organização por seções/componentes reutilizáveis.
+
+- React + TypeScript
+  - Construção dos componentes com tipagem estática para maior confiabilidade e manutenção.
+  - Melhor legibilidade e redução de erros em tempo de desenvolvimento.
+
+- Tailwind CSS
+  - Estilização rápida e consistente com classes utilitárias.
+  - Layout responsivo e ajustes de interface com baixo acoplamento.
+
+- next/image
+  - Otimização de imagens e melhor controle de responsividade.
+  - Uso adaptado para funcionar corretamente no deploy estático do GitHub Pages.
+
+- Embla Carousel
+  - Implementação dos carrosseis de serviços e feedbacks.
+  - Controle de navegação com botões e comportamento responsivo.
+
+- AOS (Animate On Scroll)
+  - Aplicação de animações de entrada para enriquecer a percepção de qualidade da interface.
+  - Inicialização isolada em componente cliente para compatibilidade com Next.js.
+
+- GitHub Actions + GitHub Pages
+  - Pipeline de build e deploy automatizado por workflow.
+  - Publicação contínua via push para branch principal de deploy.
+
+## Destaques Técnicos para Recrutadores
+
+- Estrutura de componentes desacoplada e fácil de escalar.
+- Atenção a acessibilidade com atributos semânticos e labels.
+- Boas práticas de manutenção (tipagem, reaproveitamento, comentários úteis).
+- Ajustes específicos para ambiente real de produção estática (basePath e assets no GitHub Pages).
+- Evolução incremental do código com foco em qualidade e experiência.
+
+## Estrutura de Pastas
+
+```text
+petdev/
+	public/
+	src/
+		app/
+			_components/
+			globals.css
+			layout.tsx
+			page.tsx
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Como Rodar Localmente
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Pré-requisitos
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js 20+
+- npm
 
-## Learn More
+### Passo a passo
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm install
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Aplicação local: http://localhost:3000
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Scripts
 
-## Deploy on Vercel
+```bash
+npm run dev    # desenvolvimento
+npm run build  # build de produção
+npm run start  # execução da build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deploy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+O deploy está configurado com GitHub Actions para publicar no GitHub Pages:
+
+- URL pública: https://ricardo-dev-00.github.io/petdev/
+
+## Autor
+
+Ricardo
+
+- GitHub: https://github.com/Ricardo-dev-00
