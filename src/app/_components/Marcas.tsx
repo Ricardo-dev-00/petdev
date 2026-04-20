@@ -31,14 +31,14 @@ export function Marcas() {
         {brands.map((brand, index) => (
           <li
             key={`${brand.name}-${index}`}
-            className="bg-white flex items-center justify-center rounded-2xl"
+            className="bg-white flex items-center justify-center rounded-2xl p-3"
           >
             <Image
               src={`${basePath}${brand.src}`}
               alt={`Logo ${brand.name}`}
               width={800}
               height={400}
-              className="mx-auto rounded-2xl"
+              className="mx-auto rounded-2xl w-full h-auto max-w-35 object-contain"
             />
           </li>
         ))}

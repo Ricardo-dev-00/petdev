@@ -114,7 +114,7 @@ export function Feedbacks() {
               aria-label="Voltar feedback"
               onClick={() => emblaApi?.scrollPrev()}
               disabled={!canScrollPrev}
-              className="absolute left-4 top-1/2 -translate-x-1/2 -translate-y-1/2 h-10 w-10 inline-flex items-center justify-center rounded-full border border-red-500 bg-white text-red-500 shadow-sm transition disabled:opacity-40 disabled:cursor-not-allowed hover:bg-red-50 z-10"
+              className="absolute left-2 md:left-4 top-1/2 md:-translate-x-1/2 -translate-y-1/2 h-10 w-10 inline-flex items-center justify-center rounded-full border border-red-500 bg-white text-red-500 shadow-sm transition disabled:opacity-40 disabled:cursor-not-allowed hover:bg-red-50 z-10"
             >
               <ChevronLeft size={20} />
             </button>
@@ -123,7 +123,7 @@ export function Feedbacks() {
               aria-label="Avançar feedback"
               onClick={() => emblaApi?.scrollNext()}
               disabled={!canScrollNext}
-              className="absolute right-4 top-1/2 translate-x-1/2 -translate-y-1/2 h-10 w-10 inline-flex items-center justify-center rounded-full border border-red-500 bg-white text-red-500 shadow-sm transition disabled:opacity-40 disabled:cursor-not-allowed hover:bg-red-50 z-10"
+              className="absolute right-2 md:right-4 top-1/2 md:translate-x-1/2 -translate-y-1/2 h-10 w-10 inline-flex items-center justify-center rounded-full border border-red-500 bg-white text-red-500 shadow-sm transition disabled:opacity-40 disabled:cursor-not-allowed hover:bg-red-50 z-10"
             >
               <ChevronRight size={20} />
             </button>
